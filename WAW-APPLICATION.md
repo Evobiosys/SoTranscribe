@@ -391,7 +391,7 @@ Drei Tarifstufen plus Hardware-Tausch-Option:
 
 3. **Enterprise** (custom, Indikation EUR 200–800/Monat) — Maßgeschneiderte Integration, größere Volumina, Support-Vertrag, signiertes AVV.
 
-**Hardware-Tausch-Option**: Nutzer*innen, die ein funktionsfähiges Notebook mit GPU der RTX-3060-Klasse oder besser einbringen, erhalten 24 Monate unlimitierte Transkriptions-Credits. Pairing mit erneuerbarer Energie (Anexia 100% Ökostrom).
+**Hardware-Tausch-Option (BYO-Hardware Tier)**: Nutzer*innen senden ein funktionsfähiges Gerät (8 GB RAM Apple-Silicon-Laptop reicht für quantisierte Whisper-Varianten; RTX-3060-Klasse oder besser für Whisper Large v3 in voller Qualität). Wir rack-mounten es in unserer Anexia-Kolokation. Das Gerät verarbeitet PRIMÄR die eigenen Transkriptionen der einbringenden Person; in Idle-Slots — mit ausdrücklicher Zustimmung — werden die freien Compute-Kapazitäten für andere Tenant- oder Forschungs-Workloads genutzt (etwa Climate-Modeling, EU-Forschungsnetzwerke). Die Hardware bleibt im Eigentum der einbringenden Person; Rückgabe jederzeit möglich. Pairing mit erneuerbarer Energie (Anexia 100% Ökostrom).
 
 **PLAN-UMSATZ FÜR DREI JAHRE NACH PROJEKTENDE**
 
@@ -444,6 +444,12 @@ Vier Hauptkanäle:
 3. **Direkte B2B-Akquise (Kanzleien, Praxen)** — Personalisierte Kaltakquise durch Katherine Colquitt; Präsentationen bei Wiener und Berliner Kanzlei­netzwerken; DSGVO-Compliance-Webinare als Lead-Magnete; Schweizer Migrations-Akquise (Privacy-Provider und ihre Kund*innen, die aus der Schweiz wegziehen).
 
 4. **Partnermarketing** — Co-Marketing mit Open-Source-Allies (Hylo, ungleich, Funkfeuer); Erwähnungen in Privacy-Guides (privacyguides.org, EFF, NOYB).
+
+**BEWÄHRTES VORBILD: KOALITIONS­KAMPAGNE GEGEN BRANCHENSTANDARD-DATENPRAKTIKEN**
+
+Katherine Colquitt hat als Vice President bei Edelman Smithfield die multi-stakeholder-Kampagne **"Drop the Score"** für Root Insurance konzipiert und umgesetzt — eine öffentliche Koalitionskampagne, die die branchenübliche Praxis der Verwendung von Kreditbewertungen in der Auto-Versicherungspreisgestaltung herausforderte. Die Kampagne kombinierte einen Verbraucherbericht, eine Advocacy-Koalition mehrerer Stakeholder und eine Multi-Channel-Kommunikations­strategie.
+
+Dieselbe Methodik wenden wir auf den Transkriptions­markt an: die "branchenübliche Praxis", sensible Audio-Daten an US-jurisdiktions­rechtliche Anbieter zu übergeben, ist genau der Branchenstandard, den SoTranscribe in Frage stellt. Wir haben damit ein erprobtes Playbook (mit nachweisbarer Medienreichweite — siehe Lebenslauf Katherine Colquitt) für genau diese Art von "Default-disrupting"-Marktposi­tionierung im Hause.
 
 **ZIELMARKTANSPRACHE**
 
