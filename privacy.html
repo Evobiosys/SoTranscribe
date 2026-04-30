@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — SoTranscribe</title>
+<meta name="description" content="Privacy notice for SoTranscribe. Plain language first, formal section after. EU/CH-only providers, named explicitly.">
+<link rel="canonical" href="https://sotranscribe.com/privacy.html">
+<link rel="icon" type="image/svg+xml" href="/assets/img/sotranscribe/favicon.svg">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap">
+<style>
+:root {
+  --st-primary: #2E6F7E; --st-primary-2: #1F4E58; --st-accent: #5C223D;
+  --st-bg: #F5F4F1; --st-bg-soft: #ECEAE5; --st-ink: #131F23; --st-ink-soft: #4A5961;
+  --st-line: #D4D2CD;
+}
+body { background: var(--st-bg); color: var(--st-ink); font-family: "Inter", system-ui, sans-serif; margin: 0; line-height: 1.6; }
+.legal { max-width: 720px; margin: 0 auto; padding: 4rem 1.25rem; }
+.legal h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+.legal .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.74rem; color: var(--st-primary); font-weight: 600; margin: 0 0 0.6rem; }
+.legal h2 { font-size: 1.2rem; font-weight: 600; margin: 2rem 0 0.6rem; color: var(--st-primary-2); }
+.legal h3 { font-size: 1rem; font-weight: 600; margin: 1.4rem 0 0.4rem; color: var(--st-ink); }
+.legal p, .legal li { margin: 0 0 0.7rem; font-size: 1rem; }
+.legal ul { padding-left: 1.2rem; }
+.legal a { color: var(--st-accent); text-decoration: underline; text-underline-offset: 3px; }
+.legal .lede { font-size: 1.08rem; color: var(--st-ink-soft); padding: 1rem 1.2rem; background: var(--st-bg-soft); border-left: 3px solid var(--st-primary); border-radius: 6px; margin: 1.5rem 0; }
+.legal .back { margin-top: 3rem; font-size: 0.92rem; color: var(--st-ink-soft); }
+.legal table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+.legal th, .legal td { text-align: left; padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--st-line); vertical-align: top; }
+.legal th { background: var(--st-bg-soft); font-weight: 600; color: var(--st-primary-2); }
+nav.simple { padding: 1.2rem 1.25rem; border-bottom: 1px solid var(--st-line); }
+nav.simple .inner { max-width: 720px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+nav.simple a.brand { font-weight: 600; color: var(--st-ink); text-decoration: none; }
+nav.simple .nav-links a { margin-left: 1.5rem; color: var(--st-ink-soft); text-decoration: none; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<nav class="simple">
+  <div class="inner">
+    <a class="brand" href="/">SoTranscribe</a>
+    <div class="nav-links"><a href="/">Home</a><a href="/about.html">About</a><a href="/imprint.html">Imprint</a></div>
+  </div>
+</nav>
+
+<div class="legal">
+  <p class="eyebrow">Privacy</p>
+  <h1>How we handle your data</h1>
+
+  <p class="lede">Plain version: we don&rsquo;t want your data on US infrastructure, we don&rsquo;t use Google Analytics, Stripe, or Google Fonts, and where we host things ourselves the providers are in the EU or Switzerland. If we ever process audio for you (hosted tier), the audio stays on Austrian or Swiss servers, and you can leave with your full transcripts at any time.</p>
+
+  <h2>What this page covers</h2>
+  <p>This privacy notice covers the marketing site at <code>sotranscribe.com</code>. The hosted SoTranscribe service is not yet live; when it launches, a service-specific notice will be linked here. The self-host version processes audio entirely on your machine and does not send anything to us.</p>
+
+  <h2>What we collect on this page</h2>
+  <h3>Server logs</h3>
+  <p>The page is served by GitHub Pages (V1). Standard web server logs may be retained by the host. We do not query or aggregate them.</p>
+
+  <h3>Analytics</h3>
+  <p>None at the moment. If we add analytics, we&rsquo;ll use <a href="https://plausible.io">Plausible</a> on an EU instance &mdash; cookieless, GDPR-native, no personal data collected, no IP storage. We&rsquo;ll update this notice before any tracker goes live.</p>
+
+  <h3>Form submissions (waitlist / contact)</h3>
+  <p>If you click &ldquo;Join the beta waitlist&rdquo;, the link opens your mail client with a pre-filled message to <code>connect@sotranscribe.com</code>. Email content is processed via the SoTranscribe mail infrastructure (Infomaniak, Switzerland). We use the email address only to contact you about the waitlist.</p>
+
+  <h3>Fonts</h3>
+  <p>Inter is loaded via <a href="https://fonts.bunny.net">Bunny Fonts</a> (Slovenia, EU) &mdash; a GDPR-compliant Google Fonts mirror. No Google Fonts. No tracking by font fetch.</p>
+
+  <h2>Named providers</h2>
+  <table>
+    <thead><tr><th>Service</th><th>Provider</th><th>Jurisdiction</th></tr></thead>
+    <tbody>
+      <tr><td>Static hosting (V1)</td><td>GitHub Pages (Microsoft)</td><td>USA &mdash; flagged, V2 migration to Hetzner</td></tr>
+      <tr><td>Static hosting (V2)</td><td>Hetzner</td><td>Germany (EU)</td></tr>
+      <tr><td>Domain &amp; mail hosting</td><td>Infomaniak</td><td>Switzerland</td></tr>
+      <tr><td>Fonts</td><td>Bunny Fonts</td><td>Slovenia (EU)</td></tr>
+      <tr><td>Analytics</td><td>Plausible (when added)</td><td>EU instance</td></tr>
+      <tr><td>Hosted-tier transcription (when launched)</td><td>SoTranscribe-owned colocation</td><td>Austria &amp; Switzerland</td></tr>
+      <tr><td>Payments (when hosted tier launches)</td><td>Mollie</td><td>Netherlands (EU)</td></tr>
+      <tr><td>Billing engine</td><td>Lago, self-hosted</td><td>France (EU)</td></tr>
+      <tr><td>SEPA direct debit</td><td>GoCardless</td><td>UK / EU</td></tr>
+      <tr><td>Sponsorship (when launched)</td><td>Open Collective Europe</td><td>EU fiscal host</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Why no Stripe / no US providers?</h2>
+  <p>The US <a href="https://en.wikipedia.org/wiki/CLOUD_Act">CLOUD Act</a> (2018) lets US authorities compel US-jurisdiction providers to disclose stored data, even when the data is held on EU soil. Audio of meetings is among the most sensitive content a person creates &mdash; we don&rsquo;t want that exposure on our chain, and we suspect you don&rsquo;t either. Hence Mollie (NL) instead of Stripe, Bunny Fonts (SI) instead of Google Fonts, and a long-term commitment to migrate everything off US infrastructure.</p>
+
+  <h2>Why Austria and Switzerland for hosting</h2>
+  <p>We host transcription infrastructure in <strong>Austria</strong> and <strong>Switzerland</strong>. Both are outside the U.S. CLOUD Act. Austria adds an extra layer: under Austrian law, providers can only be compelled to release data on a <strong>targeted, judicially-warranted basis</strong> &mdash; never as part of a dragnet. That&rsquo;s a stronger protection than Switzerland on this specific point, and it&rsquo;s why we host in both, so you can pick.</p>
+
+  <h2>Your rights (GDPR)</h2>
+  <ul>
+    <li><strong>Access</strong> &mdash; ask what data we hold about you.</li>
+    <li><strong>Erasure</strong> &mdash; ask us to delete it.</li>
+    <li><strong>Portability</strong> &mdash; for the hosted tier (when live), full transcripts are exportable in Markdown + JSON. No lock-in.</li>
+    <li><strong>Complaint</strong> &mdash; you can complain to your national data-protection authority. In Austria: <a href="https://www.dsb.gv.at">Datenschutzbeh&ouml;rde</a>.</li>
+  </ul>
+  <p>To exercise any right, mail <a href="mailto:connect@sotranscribe.com">connect@sotranscribe.com</a>.</p>
+
+  <h2>Data minimisation principle</h2>
+  <p>Self-host: nothing leaves your machine. Hosted (when live): we process the minimum needed to transcribe. Your audio gets transcribed and stored on your behalf; we don&rsquo;t train models on it, we don&rsquo;t share it, we don&rsquo;t analyse it for marketing. Crown-jewel data deserves the strongest available promise.</p>
+
+  <h2>Updates</h2>
+  <p>This notice is updated when stack pieces change &mdash; especially when the hosted tier launches and when V2 migrates the static site off GitHub Pages. Last updated: 2026-04-30.</p>
+
+  <p class="back"><a href="/">&larr; Back to SoTranscribe</a> &middot; <a href="/imprint.html">Imprint</a></p>
+</div>
+</body>
+</html>

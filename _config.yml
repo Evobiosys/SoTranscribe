@@ -1,0 +1,17 @@
+title: SoTranscribe
+description: Sovereign transcription. Self-host or hosted on Austrian and Swiss servers — outside the U.S. CLOUD Act.
+url: https://sotranscribe.com
+lang: en
+
+# Jekyll passthrough — site is plain HTML, Jekyll just builds and deploys.
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - HANDOFF.md
+  - LICENSE.md
+  - .github
+
+plugins: []
