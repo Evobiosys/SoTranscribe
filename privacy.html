@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy — SoTranscribe</title>
-<meta name="description" content="Privacy notice for SoTranscribe. Plain language first, formal section after. EU/CH-only providers, named explicitly.">
+<meta name="description" content="Privacy notice for SoTranscribe. Plain language first, formal section after. EU/AT-only providers, named explicitly.">
 <link rel="canonical" href="https://sotranscribe.com/privacy.html">
 <link rel="icon" type="image/svg+xml" href="/assets/img/sotranscribe/favicon.svg">
 <link rel="preconnect" href="https://fonts.bunny.net">
@@ -48,7 +48,7 @@ nav.simple .nav-links a { margin-left: 1.5rem; color: var(--st-ink-soft); text-d
   <p class="eyebrow">Privacy</p>
   <h1>How we handle your data</h1>
 
-  <p class="lede">Plain version: we don&rsquo;t want your data on US infrastructure, we don&rsquo;t use Google Analytics, Stripe, or Google Fonts, and where we host things ourselves the providers are in the EU or Switzerland. If we ever process audio for you (hosted tier), the audio stays on Austrian or Swiss servers, and you can leave with your full transcripts at any time.</p>
+  <p class="lede">Plain version: we don&rsquo;t want your data on US infrastructure, we don&rsquo;t use Google Analytics, Stripe, or Google Fonts, and where we host things ourselves the providers are in the EU. If we ever process audio for you (hosted tier), the audio stays on Austrian servers (Anexia, Klagenfurt &amp; Wien), and you can leave with your full transcripts at any time.</p>
 
   <h2>What this page covers</h2>
   <p>This privacy notice covers the marketing site at <code>sotranscribe.com</code>. The hosted SoTranscribe service is not yet live; when it launches, a service-specific notice will be linked here. The self-host version processes audio entirely on your machine and does not send anything to us.</p>
@@ -61,7 +61,7 @@ nav.simple .nav-links a { margin-left: 1.5rem; color: var(--st-ink-soft); text-d
   <p>None at the moment. If we add analytics, we&rsquo;ll use <a href="https://plausible.io">Plausible</a> on an EU instance &mdash; cookieless, GDPR-native, no personal data collected, no IP storage. We&rsquo;ll update this notice before any tracker goes live.</p>
 
   <h3>Form submissions (waitlist / contact)</h3>
-  <p>If you click &ldquo;Join the beta waitlist&rdquo;, the link opens your mail client with a pre-filled message to <code>connect@sotranscribe.com</code>. Email content is processed via the SoTranscribe mail infrastructure (Infomaniak, Switzerland). We use the email address only to contact you about the waitlist.</p>
+  <p>If you click &ldquo;Join the beta waitlist&rdquo;, the link opens your mail client with a pre-filled message to <code>connect@sotranscribe.com</code>. Email content is processed via the SoTranscribe mail infrastructure (Austrian provider, EU jurisdiction). We use the email address only to contact you about the waitlist.</p>
 
   <h3>Fonts</h3>
   <p>Inter is loaded via <a href="https://fonts.bunny.net">Bunny Fonts</a> (Slovenia, EU) &mdash; a GDPR-compliant Google Fonts mirror. No Google Fonts. No tracking by font fetch.</p>
@@ -72,10 +72,10 @@ nav.simple .nav-links a { margin-left: 1.5rem; color: var(--st-ink-soft); text-d
     <tbody>
       <tr><td>Static hosting (V1)</td><td>GitHub Pages (Microsoft)</td><td>USA &mdash; flagged, V2 migration to Hetzner</td></tr>
       <tr><td>Static hosting (V2)</td><td>Hetzner</td><td>Germany (EU)</td></tr>
-      <tr><td>Domain &amp; mail hosting</td><td>Infomaniak</td><td>Switzerland</td></tr>
+      <tr><td>Domain &amp; mail hosting</td><td>Austrian provider (EU)</td><td>Austria (EU)</td></tr>
       <tr><td>Fonts</td><td>Bunny Fonts</td><td>Slovenia (EU)</td></tr>
       <tr><td>Analytics</td><td>Plausible (when added)</td><td>EU instance</td></tr>
-      <tr><td>Hosted-tier transcription (when launched)</td><td>SoTranscribe-owned colocation</td><td>Austria &amp; Switzerland</td></tr>
+      <tr><td>Hosted-tier transcription (when launched)</td><td>SoTranscribe-owned colocation at Anexia</td><td>Austria (Klagenfurt &amp; Wien)</td></tr>
       <tr><td>Payments (when hosted tier launches)</td><td>Mollie</td><td>Netherlands (EU)</td></tr>
       <tr><td>Billing engine</td><td>Lago, self-hosted</td><td>France (EU)</td></tr>
       <tr><td>SEPA direct debit</td><td>GoCardless</td><td>UK / EU</td></tr>
@@ -86,8 +86,9 @@ nav.simple .nav-links a { margin-left: 1.5rem; color: var(--st-ink-soft); text-d
   <h2>Why no Stripe / no US providers?</h2>
   <p>The US <a href="https://en.wikipedia.org/wiki/CLOUD_Act">CLOUD Act</a> (2018) lets US authorities compel US-jurisdiction providers to disclose stored data, even when the data is held on EU soil. Audio of meetings is among the most sensitive content a person creates &mdash; we don&rsquo;t want that exposure on our chain, and we suspect you don&rsquo;t either. Hence Mollie (NL) instead of Stripe, Bunny Fonts (SI) instead of Google Fonts, and a long-term commitment to migrate everything off US infrastructure.</p>
 
-  <h2>Why Austria and Switzerland for hosting</h2>
-  <p>We host transcription infrastructure in <strong>Austria</strong> and <strong>Switzerland</strong>. Both are outside the U.S. CLOUD Act. Austria adds an extra layer: under Austrian law, providers can only be compelled to release data on a <strong>targeted, judicially-warranted basis</strong> &mdash; never as part of a dragnet. That&rsquo;s a stronger protection than Switzerland on this specific point, and it&rsquo;s why we host in both, so you can pick.</p>
+  <h2>Why Austria for hosting (and not Switzerland anymore)</h2>
+  <p>We host transcription infrastructure in <strong>Austria</strong> only. Austria is outside the U.S. CLOUD Act, EU and GDPR-aligned, and its surveillance law (&sect; 134 / 135a StPO) requires an individual <strong>court order</strong> before any provider can be compelled to release content data. The Austrian Verfassungsgerichtshof struck down general data retention as unconstitutional in 2014.</p>
+  <p>We previously offered Swiss colocation as a second option. We dropped it ahead of the pending Swiss V&Uuml;PF revision (Article 50a), which would mandate provider-side decryption, trigger 6-month IP-log retention at as few as 5,000 users, and impose government-ID identification &mdash; all by Federal Council ordinance, bypassing parliament. Proton, Switzerland&rsquo;s flagship privacy provider, is publicly relocating infrastructure out of Switzerland into the EU. We took the same signal.</p>
 
   <h2>Your rights (GDPR)</h2>
   <ul>

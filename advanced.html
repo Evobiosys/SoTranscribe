@@ -56,7 +56,7 @@ body { background: var(--st-bg); color: var(--st-ink); font-family: var(--st-bod
       <pre class="st-pipeline" aria-label="SoTranscribe pipeline diagram">
 Recordings   &rarr;  Dedupe   &rarr;  Whisper Large v3   &rarr;  Diarize   &rarr;  Markdown + JSON   &rarr;  Your storage
 (any source,    (hash-       (faster-whisper,         (pyannote,    (timestamps,           (self-host /
- incl wearable)  based)        word timestamps)        speakers)     speakers, meta)        AT / CH / your NAS)
+ incl wearable)  based)        word timestamps)        speakers)     speakers, meta)        AT / your NAS)
       </pre>
     </div>
   </section>
@@ -93,11 +93,11 @@ Recordings   &rarr;  Dedupe   &rarr;  Whisper Large v3   &rarr;  Diarize   &rarr
         </div>
         <div class="st-card st-card-accent">
           <h3 class="st-card-title">Hosted</h3>
-          <p class="st-card-tag">Beta waitlist &middot; Austrian + Swiss servers</p>
+          <p class="st-card-tag">Beta waitlist &middot; Austrian servers (Anexia)</p>
           <ul class="st-check-list">
-            <li>We host on EU/CH-sovereign infrastructure we colocate</li>
+            <li>We host on EU/AT-sovereign infrastructure we colocate (Anexia, Klagenfurt &amp; Wien)</li>
             <li>Zero ops &mdash; upload audio, get transcripts back</li>
-            <li>Billing in EUR/CHF via Mollie (NL) + self-hosted Lago (FR)</li>
+            <li>Billing in EUR via Mollie (NL) + self-hosted Lago (FR)</li>
             <li>No US payment rails &mdash; ever</li>
           </ul>
         </div>
@@ -107,11 +107,26 @@ Recordings   &rarr;  Dedupe   &rarr;  Whisper Large v3   &rarr;  Diarize   &rarr
 
   <section class="st-section">
     <div class="st-section-inner st-prose">
-      <p class="st-eyebrow">Why Austria, not just Switzerland?</p>
-      <h2 class="st-h2">Targeted-disclosure regime &gt; constitutional privacy alone.</h2>
-      <p>Most privacy-first transcription services pick Switzerland for its non-EU, non-CLOUD-Act jurisdiction and constitutional privacy guarantees. We agree those are valuable and we host in Switzerland too. But Austria adds something Switzerland doesn&rsquo;t: under Austrian law, providers can only be compelled to release data on a <strong>targeted, judicially-warranted basis</strong> &mdash; never as part of a dragnet.</p>
-      <p>This is a structural protection at the <em>process</em> layer, not just the <em>outcome</em> layer. It means an Austrian-hosted provider cannot be served a bulk surveillance order &mdash; only individual, court-warranted requests. For meeting audio, this is a meaningful additional moat.</p>
-      <p>So we host both. EU customers get an Austrian-EU option (frictionless billing, GDPR-native). Customers who want maximum jurisdictional distance from the U.S. get a Swiss option. You pick.</p>
+      <p class="st-eyebrow">Why Austria &mdash; and why not Switzerland (anymore)</p>
+      <h2 class="st-h2">In 2026, Austria is in materially better jurisdictional shape.</h2>
+      <p>The conventional &ldquo;privacy provider&rdquo; choice has been Switzerland for two decades: non-EU, non-CLOUD-Act, constitutional privacy. We held that view too. As of 2026, the picture has shifted enough that we host in Austria only.</p>
+      <h3 style="font-size:1.1rem;font-weight:600;margin-top:1.4rem;">What changed in Switzerland</h3>
+      <ul class="st-check-list">
+        <li>The Federal Council&rsquo;s pending revision of the <strong>V&Uuml;PF / VIS-NDB</strong> ordinance &mdash; specifically <strong>Article 50a</strong> &mdash; would obligate covered providers to <strong>perform decryption on the provider side</strong> when served. That is a structural backdoor mandate, not a court-order regime.</li>
+        <li><strong>Data-retention obligation</strong> (6 months of IP logs) kicks in at as few as <strong>5,000 users</strong> &mdash; an extraordinarily low threshold.</li>
+        <li><strong>Government-ID identification mandate</strong> for users of covered services.</li>
+        <li>Critically, this is being done by <strong>Federal Council ordinance</strong>, not by parliamentary law &mdash; which sidesteps the usual Swiss public-debate brake on surveillance expansion.</li>
+        <li><strong>Proton</strong>, the Swiss flagship privacy provider, has publicly announced it is relocating infrastructure <em>out</em> of Switzerland into the EU because of this trajectory. When the canary is moving, you don&rsquo;t move into the cage.</li>
+      </ul>
+      <h3 style="font-size:1.1rem;font-weight:600;margin-top:1.4rem;">What Austria offers instead</h3>
+      <ul class="st-check-list">
+        <li><strong>&sect; 134 / 135a StPO</strong> &mdash; provider compulsion to release content data requires an individual <strong>court order</strong>; bulk requests are not legally available.</li>
+        <li><strong>Verfassungsgerichtshof (G47/2012, 27 June 2014)</strong> struck down general data-retention obligations as unconstitutional &mdash; Austria has no equivalent of the new Swiss IP-log-retention regime.</li>
+        <li>EU member &mdash; <strong>GDPR-native</strong>, single legal regime, frictionless EU billing.</li>
+        <li>Outside U.S. CLOUD Act reach (CLOUD Act is jurisdictional over US providers, not over EU member states).</li>
+      </ul>
+      <p class="st-aside" style="margin-top:1.4rem;"><strong>Proton ist dabei, die Schweiz zu verlassen. Wir bauen direkt in &Ouml;sterreich.</strong></p>
+      <p>We host with <strong>Anexia</strong> in Klagenfurt and Wien &mdash; Austrian-owned, named facilities. EU customers get GDPR-native billing. Self-host users get the same source code regardless.</p>
     </div>
   </section>
 
@@ -146,7 +161,7 @@ Recordings   &rarr;  Dedupe   &rarr;  Whisper Large v3   &rarr;  Diarize   &rarr
       <p class="st-eyebrow">Transparent costs</p>
       <h2 class="st-h2">Hosting isn&rsquo;t free &mdash; here&rsquo;s the math.</h2>
       <ul class="st-cost-list">
-        <li><strong>GPU compute</strong> &mdash; Whisper Large v3 wants RTX 3090-class memory or better. Colocation in Austria/Switzerland runs roughly &euro;100&ndash;250/month per node, depending on utilization.</li>
+        <li><strong>GPU compute</strong> &mdash; Whisper Large v3 wants RTX 3090-class memory or better. Colocation in Austria (Anexia, Klagenfurt &amp; Wien) runs roughly &euro;100&ndash;250/month per node, depending on utilization.</li>
         <li><strong>Storage</strong> &mdash; cheap per-TB, but accumulates. Audio is bulky.</li>
         <li><strong>Bandwidth</strong> &mdash; egress is the silent line item.</li>
       </ul>
@@ -174,7 +189,7 @@ Recordings   &rarr;  Dedupe   &rarr;  Whisper Large v3   &rarr;  Diarize   &rarr
         <dd>CLOUD Act exposure. We use Mollie (NL) for cards and self-hosted Lago (FR) for invoicing. Your billing record never leaves the European jurisdiction.</dd>
 
         <dt>What about my data?</dt>
-        <dd>Self-host: nothing leaves your machine. Hosted: audio sits on EU/CH-sovereign servers, named providers, never touching US infrastructure. Crown-jewel data &mdash; meeting audio is exactly that &mdash; deserves the strongest available promise.</dd>
+        <dd>Self-host: nothing leaves your machine. Hosted: audio sits on EU/AT-sovereign servers (Anexia, Klagenfurt &amp; Wien), named providers, never touching US infrastructure. Crown-jewel data &mdash; meeting audio is exactly that &mdash; deserves the strongest available promise.</dd>
 
         <dt>Can I leave?</dt>
         <dd>Yes. The EvoBioSys License permits export and migration. Hosted tier exports your full transcripts + metadata in standard formats (Markdown + JSON). No lock-in moats. If you&rsquo;re unhappy, the door opens outward.</dd>

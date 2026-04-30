@@ -1,6 +1,6 @@
 # SoTranscribe — sotranscribe.com
 
-Sovereign transcription. Self-host or hosted on Austrian and Swiss servers — outside U.S. CLOUD Act reach.
+Sovereign transcription. Self-host or hosted on Austrian servers — outside U.S. CLOUD Act reach, with stronger surveillance protections than Switzerland (post-VÜPF revision).
 
 The first product of **SoTranscribe GmbH (in Gründung)**, a Vienna-based startup spun out of [idea2.life](https://idea2.life) within the [EvoBioSys](https://evobiosys.org) network.
 
