@@ -323,6 +323,21 @@
     </div>
   </section>
 
+  <!-- ============== NEWSLETTER ============== -->
+  <section class="st-section">
+    <div class="st-section-inner">
+      <p class="st-eyebrow">Stay posted</p>
+      <h2 class="st-h2">Release notes and privacy-first transcription news.</h2>
+      <p class="st-lede">No spam, no cloud-service pitch &mdash; just what we ship and what we learn about jurisdiction, hardware, and sovereign audio.</p>
+      <form id="st-newsletter-form" class="st-newsletter-form" novalidate>
+        <input id="st-newsletter-email" class="st-newsletter-input" type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+        <button type="submit" id="st-newsletter-submit" class="st-btn st-btn-primary">Subscribe</button>
+      </form>
+      <p id="st-newsletter-msg" class="st-newsletter-msg" role="status" aria-live="polite"></p>
+      <p class="st-caveat">Double opt-in. Unsubscribe anytime. No tracking.</p>
+    </div>
+  </section>
+
   <!-- ============== COMMUNITY ============== -->
   <section class="st-section">
     <div class="st-section-inner">
@@ -359,6 +374,64 @@
     var p = (navigator.userAgent || navigator.platform || '').toLowerCase();
     var isApple = /mac|iphone|ipad|ipod/.test(p);
     el.textContent = isApple ? '⌘F' : 'Ctrl+F';
+  })();
+</script>
+<script>
+  (function () {
+    var form = document.getElementById('st-newsletter-form');
+    if (!form) return;
+    var emailInput = document.getElementById('st-newsletter-email');
+    var submitBtn = document.getElementById('st-newsletter-submit');
+    var msg = document.getElementById('st-newsletter-msg');
+
+    function setMsg(text, state) {
+      msg.textContent = text;
+      if (state) {
+        msg.setAttribute('data-state', state);
+      } else {
+        msg.removeAttribute('data-state');
+      }
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = emailInput.value.trim();
+      if (!email) return;
+
+      submitBtn.disabled = true;
+      setMsg('', null);
+
+      fetch('https://subscriber.questhub.eco/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          project: 'sotranscribe',
+          source: 'sotranscribe.com',
+          gdpr: true
+        })
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('bad status');
+          return res.json();
+        })
+        .then(function (data) {
+          if (data.status === 'already_subscribed') {
+            setMsg("You're already on the list.", 'ok');
+          } else if (data.status === 'confirmation_sent' || data.status === 'confirmation_pending') {
+            setMsg('Almost there — check your inbox to confirm.', 'ok');
+            form.reset();
+          } else {
+            setMsg('Subscription service is briefly unavailable — please try again later.', 'error');
+          }
+        })
+        .catch(function () {
+          setMsg('Subscription service is briefly unavailable — please try again later.', 'error');
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+        });
+    });
   })();
 </script>
 </body>
